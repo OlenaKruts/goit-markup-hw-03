@@ -83,10 +83,33 @@ body {
   margin: -1px;
 }
 
+.container {
+  display: flex;
+  width: 1128px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: grey;
+}
 /*===========/COMPONENTS/===========*/
 
 /*===========HEADER===========*/
+.main-page {
+  align-items: center;
+}
 
+.page-header {
+  display: flex;
+  margin-right: auto;
+}
+
+.page-header > .link {
+  margin-right: 76px;
+}
+
+.menu-item:not(:last-child),
+.menu-adress-item:not(:last-child) {
+  margin-right: 40px;
+}
 .menu-nav {
   display: flex;
 
@@ -117,7 +140,6 @@ body {
 
 .menu-adress {
   display: flex;
-  margin-left: auto;
 
   font-style: normal;
 }
@@ -127,26 +149,6 @@ body {
   color: inherit;
 }
 
-.container {
-  display: flex;
-  width: 1158px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.page-header {
-  display: flex;
-  margin-right: auto;
-}
-
-.page-header > .link {
-  margin-right: 76px;
-}
-
-.menu-item:not(:last-child),
-.menu-adress-item:not(:last-child) {
-  margin-right: 40px;
-}
 /*===========/HEADER/===========*/
 
 /*============HERO===============*/
@@ -159,14 +161,15 @@ body {
 }
 
 .service-btn {
+  display: inline-block;
+
   font-family: inherit;
   font-weight: 500;
   font-size: inherit;
   line-height: inherit;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   border: none;
+  border-radius: 4px;
 
   color: var(--font-hero-clr);
   background: var(--button-color);
@@ -179,11 +182,16 @@ body {
 }
 
 .hero {
+  text-align: center;
   background: var(--primary-text-color);
 }
 /*============/HERO/===============*/
 
 /*========OUR FEATURES=============*/
+
+.features-items {
+  display: flex;
+}
 
 .features-name {
   font-size: 20px;
@@ -193,9 +201,25 @@ body {
   color: var(--primary-text-color);
 }
 
+.features-list:not(:last-child) {
+  margin-right: 24px;
+}
 /*======/OUR FEATURES/=============*/
 
 /*======WHAT ARE WE DOING=============*/
+.foto-items {
+  display: flex;
+}
+
+.picture {
+  display: block;
+
+  border: 1px solid var(--text-footer-clr);
+}
+
+.foto-image:not(:last-child) {
+  margin-right: 24px;
+}
 /*======OUR TEAM=============*/
 
 .team {
@@ -258,6 +282,6 @@ footer {
 }
 
 .foto-card {
-  background-color: tomato;
+  background-color: green;
 }
 /*======/PORTOFOLIO/=============*/
