@@ -297,7 +297,22 @@ footer {
 }
 /*======/FOOTER/=============*/
 /*======PORTOFOLIO=============*/
+.card-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
 .filter-btn {
+  display: block;
+  /*margin-right: 24px;*/
+  padding: 12px 24px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -305,27 +320,49 @@ footer {
   letter-spacing: 0.04em;
 
   border: none;
+  border-radius: 4px;
 
   color: var(--button-color);
   background: var(--bcgnd-fltr-clr);
 
   cursor: pointer;
 }
+.filter-menu:not(:last-child) {
+  margin-right: 24px;
+}
+
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--font-hero-clr);
   background: var(--hover-color);
 }
 
+.foto-ptf {
+  margin-bottom: 32px;
+}
+
 .title-ptf {
+  margin-bottom: 8px;
+  padding-left: 16px;
+
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
 
   color: var(--primary-text-color);
 }
+.name-fltr-ptf {
+  padding-left: 16px;
+}
 
 .foto-card {
+  border: 1px solid var(--text-footer-clr);
+  margin-right: 24px;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  /*row-gap: 24px;
+  column-gap: 48px;*/
+  flex-basis: calc((100% - 48px) / 3);
   background-color: green;
 }
 /*======/PORTOFOLIO/=============*/

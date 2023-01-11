@@ -18,161 +18,170 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="link" href="./index.html">
-          <p class="logotype"><span class="accent">Web</span>Studio</p>
-        </a>
-        <ul class="menu-nav list">
-          <li>
-            <a class="menu-studio link" href="./index.html">Studio</a>
-          </li>
-          <li>
-            <a class="menu-prt link" href="./portofolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="menu-cnts link" href="#">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address>
-        <ul class="menu-adress list">
-          <li>
-            <a class="menu-email link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="menu-tel link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+    <header class="header">
+      <div class="container main-page">
+        <nav class="page-header">
+          <a class="link" href="./index.html">
+            <p class="logotype"><span class="accent">Web</span>Studio</p>
+          </a>
+          <ul class="menu-nav list">
+            <li class="menu-item">
+              <a class="menu-studio link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-prt link" href="./portofolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-cnts link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address>
+          <ul class="menu-adress list">
+            <li class="menu-adress-item">
+              <a class="menu-email link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="menu-adress-item">
+              <a class="menu-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
       <section class="page-ptf">
         <h1 class="visually-hidden">Portfolio</h1>
-        <ul class="filter-menu list">
-          <li><button class="filter-btn" type="button">All</button></li>
-          <li><button class="filter-btn" type="button">Web Site</button></li>
-          <li><button class="filter-btn" type="button">App</button></li>
-          <li><button class="filter-btn" type="button">Design</button></li>
-          <li><button class="filter-btn" type="button">Marketing</button></li>
-        </ul>
-        <ul class="list">
-          <li class="foto-card">
-            <img
-              class="foto-ptf"
-              src="./images/prt-fotos/banking.jpg"
-              alt="Banking App"
-              width="360"
-              height="300"
-            />
-            <h2 class="title-ptf">Banking App Interface Concept</h2>
-            <p class="name-fltr-ptf">App</p>
-          </li>
-          <li class="foto-card">
-            <img
-              class="foto-ptf"
-              src="./images/prt-fotos/fon.jpg"
-              alt="Fon"
-              width="360"
-              height="300"
-            />
-            <h2 class="title-ptf">Cashless Payment</h2>
-            <p class="name-fltr-ptf">Marketing</p>
-          </li>
-          <li class="foto-card">
-            <img
-              class="foto-ptf"
-              src="./images/prt-fotos/nout.jpg"
-              alt="Noutbook"
-              width="360"
-              height="300"
-            />
-            <h2 class="title-ptf">Meditaion App</h2>
-            <p class="name-fltr-ptf">App</p>
-          </li>
-          <li class="foto-card">
-            <img
-              class="foto-ptf"
-              src="./images/prt-fotos/driver.jpg"
-              alt="Taxi driver"
-              width="360"
-              height="300"
-            />
-            <h2 class="title-ptf">Taxi Service</h2>
-            <p class="name-fltr-ptf">Marketing</p>
-          </li>
-          <li>
-            <img
-              class="foto-ptf"
-              src="./images/prt-fotos/ekran.jpg"
-              alt="Screen"
-              width="360"
-              height="300"
-            />
-            <h2 class="title-ptf">Screen Illustrations</h2>
-            <p class="name-fltr-ptf">Design</p>
-          </li>
-          <li>
-            <img
-              class="foto-ptf"
-              src="./images/prt-fotos/girl.jpg"
-              alt="Girl"
-              width="360"
-              height="300"
-            />
-            <h2 class="title-ptf">Online Courses</h2>
-            <p class="name-fltr-ptf">Marketing</p>
-          </li>
-          <li>
-            <img
-              class="foto-ptf"
-              src="./images/prt-fotos/stories.jpg"
-              alt="Insta stories"
-              width="360"
-              height="300"
-            />
-            <h2 class="title-ptf">Instagram Stories Concept</h2>
-            <p class="name-fltr-ptf">Design</p>
-          </li>
-          <li>
-            <img
-              class="foto-ptf"
-              src="./images/prt-fotos/green.jpg"
-              alt="Organic"
-              width="360"
-              height="300"
-            />
-            <h2 class="title-ptf">Organic Food</h2>
-            <p class="name-fltr-ptf">Web Site</p>
-          </li>
-          <li>
-            <img
-              class="foto-ptf"
-              src="./images/prt-fotos/cappuchino.jpg"
-              alt="Coffee"
-              width="360"
-              height="300"
-            />
-            <h2 class="title-ptf">Fresh Coffee</h2>
-            <p class="name-fltr-ptf">Web Site</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="filter-menu list">
+            <li><button class="filter-btn" type="button">All</button></li>
+            <li><button class="filter-btn" type="button">Web Site</button></li>
+            <li><button class="filter-btn" type="button">App</button></li>
+            <li><button class="filter-btn" type="button">Design</button></li>
+            <li><button class="filter-btn" type="button">Marketing</button></li>
+          </ul>
+        </div>
+        <div class="container">
+          <ul class="list card-items">
+            <li class="foto-card">
+              <img
+                class="foto-ptf"
+                src="./images/prt-fotos/banking.jpg"
+                alt="Banking App"
+                width="360"
+                height="300"
+              />
+              <h2 class="title-ptf">Banking App Interface Concept</h2>
+              <p class="name-fltr-ptf">App</p>
+            </li>
+            <li class="foto-card">
+              <img
+                class="foto-ptf"
+                src="./images/prt-fotos/fon.jpg"
+                alt="Fon"
+                width="360"
+                height="300"
+              />
+              <h2 class="title-ptf">Cashless Payment</h2>
+              <p class="name-fltr-ptf">Marketing</p>
+            </li>
+            <li class="foto-card">
+              <img
+                class="foto-ptf"
+                src="./images/prt-fotos/nout.jpg"
+                alt="Noutbook"
+                width="360"
+                height="300"
+              />
+              <h2 class="title-ptf">Meditaion App</h2>
+              <p class="name-fltr-ptf">App</p>
+            </li>
+            <li class="foto-card">
+              <img
+                class="foto-ptf"
+                src="./images/prt-fotos/driver.jpg"
+                alt="Taxi driver"
+                width="360"
+                height="300"
+              />
+              <h2 class="title-ptf">Taxi Service</h2>
+              <p class="name-fltr-ptf">Marketing</p>
+            </li>
+            <li class="foto-card">
+              <img
+                class="foto-ptf"
+                src="./images/prt-fotos/ekran.jpg"
+                alt="Screen"
+                width="360"
+                height="300"
+              />
+              <h2 class="title-ptf">Screen Illustrations</h2>
+              <p class="name-fltr-ptf">Design</p>
+            </li>
+            <li class="foto-card">
+              <img
+                class="foto-ptf"
+                src="./images/prt-fotos/girl.jpg"
+                alt="Girl"
+                width="360"
+                height="300"
+              />
+              <h2 class="title-ptf">Online Courses</h2>
+              <p class="name-fltr-ptf">Marketing</p>
+            </li>
+            <li class="foto-card">
+              <img
+                class="foto-ptf"
+                src="./images/prt-fotos/stories.jpg"
+                alt="Insta stories"
+                width="360"
+                height="300"
+              />
+              <h2 class="title-ptf">Instagram Stories Concept</h2>
+              <p class="name-fltr-ptf">Design</p>
+            </li>
+            <li class="foto-card">
+              <img
+                class="foto-ptf"
+                src="./images/prt-fotos/green.jpg"
+                alt="Organic"
+                width="360"
+                height="300"
+              />
+              <h2 class="title-ptf">Organic Food</h2>
+              <p class="name-fltr-ptf">Web Site</p>
+            </li>
+            <li class="foto-card">
+              <img
+                class="foto-ptf"
+                src="./images/prt-fotos/cappuchino.jpg"
+                alt="Coffee"
+                width="360"
+                height="300"
+              />
+              <h2 class="title-ptf">Fresh Coffee</h2>
+              <p class="name-fltr-ptf">Web Site</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer>
-      <a class="link" href="./index.html">
-        <p class="logotype logo-footer">
-          <span class="accent">Web</span>Studio
+      <div class="container-footer">
+        <a class="link" href="./index.html">
+          <p class="logotype logo-footer">
+            <span class="accent">Web</span>Studio
+          </p>
+        </a>
+        <p class="text-footer">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
         </p>
-      </a>
-      <p class="text-footer">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      </div>
     </footer>
   </body>
 </html>
