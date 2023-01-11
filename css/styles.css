@@ -1,0 +1,263 @@
+:root {
+  --text-main: #434455;
+  --primary-text-color: #2e2f42;
+  --button-color: #4d5ae5;
+  --hover-color: #404bbf;
+  --bcgnd-fltr-clr: #f4f4fd;
+  --text-footer-clr: #e7e9fc;
+  --font-hero-clr: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--text-main);
+  background-color: var(--font-hero-clr);
+}
+/*===========COMPONENTS===========*/
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  color: var(--primary-text-color);
+}
+
+.logotype {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-text-color);
+}
+
+.accent {
+  color: var(--button-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/*===========/COMPONENTS/===========*/
+
+/*===========HEADER===========*/
+
+.menu-nav {
+  display: flex;
+
+  font-style: normal;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.menu-studio:hover,
+.menu-studio:focus,
+.menu-prt:hover,
+.menu-prt:focus,
+.menu-cnts:hover,
+.menu-cnts:focus,
+.menu-email:hover,
+.menu-email:focus,
+.menu-tel:hover,
+.menu-tel:focus {
+  color: var(--hover-color);
+}
+
+.menu-studio,
+.menu-prt,
+.menu-cnts {
+  color: var(--primary-text-color);
+}
+
+.menu-adress {
+  display: flex;
+  margin-left: auto;
+
+  font-style: normal;
+}
+
+.menu-email,
+.menu-tel {
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  width: 1158px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-header {
+  display: flex;
+  margin-right: auto;
+}
+
+.page-header > .link {
+  margin-right: 76px;
+}
+
+.menu-item:not(:last-child),
+.menu-adress-item:not(:last-child) {
+  margin-right: 40px;
+}
+/*===========/HEADER/===========*/
+
+/*============HERO===============*/
+.main-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+
+  color: var(--font-hero-clr);
+}
+
+.service-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  border: none;
+
+  color: var(--font-hero-clr);
+  background: var(--button-color);
+
+  cursor: pointer;
+}
+.service-btn:hover,
+.service-btn:focus {
+  background: var(--hover-color);
+}
+
+.hero {
+  background: var(--primary-text-color);
+}
+/*============/HERO/===============*/
+
+/*========OUR FEATURES=============*/
+
+.features-name {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+
+  color: var(--primary-text-color);
+}
+
+/*======/OUR FEATURES/=============*/
+
+/*======WHAT ARE WE DOING=============*/
+/*======OUR TEAM=============*/
+
+.team {
+  background: var(--bcgnd-fltr-clr);
+}
+
+.team-list {
+  background: var(--font-hero-clr);
+}
+
+.team-name {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+
+  color: var(--primary-text-color);
+}
+
+/*======/OUR TEAM/=============*/
+/*======FOOTER=============*/
+footer {
+  background: var(--primary-text-color);
+}
+
+.logo-footer {
+  color: var(--bcgnd-fltr-clr);
+}
+
+.text-footer {
+  color: var(--text-footer-clr);
+}
+/*======/FOOTER/=============*/
+/*======PORTOFOLIO=============*/
+.filter-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: inherit;
+  letter-spacing: 0.04em;
+
+  border: none;
+
+  color: var(--button-color);
+  background: var(--bcgnd-fltr-clr);
+
+  cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--font-hero-clr);
+  background: var(--hover-color);
+}
+
+.title-ptf {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+
+  color: var(--primary-text-color);
+}
+
+.foto-card {
+  background-color: aqua;
+}
+/*======/PORTOFOLIO/=============*/
