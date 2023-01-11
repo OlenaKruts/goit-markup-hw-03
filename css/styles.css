@@ -44,6 +44,8 @@ body {
 /*===========COMPONENTS===========*/
 
 .section-title {
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
 
@@ -88,13 +90,22 @@ body {
   width: 1128px;
   margin-right: auto;
   margin-left: auto;
-  background-color: grey;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 /*===========/COMPONENTS/===========*/
 
 /*===========HEADER===========*/
+.header {
+  border-bottom: 1px solid var(--text-footer-clr);
+  height: 72px;
+}
 .main-page {
   align-items: center;
+  height: 100%;
 }
 
 .page-header {
@@ -112,6 +123,7 @@ body {
 }
 .menu-nav {
   display: flex;
+  align-items: center;
 
   font-style: normal;
   font-weight: 500;
@@ -153,6 +165,8 @@ body {
 
 /*============HERO===============*/
 .main-title {
+  margin-bottom: 48px;
+
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -162,6 +176,7 @@ body {
 
 .service-btn {
   display: inline-block;
+  padding: 16px 32px;
 
   font-family: inherit;
   font-weight: 500;
@@ -222,15 +237,32 @@ body {
 }
 /*======OUR TEAM=============*/
 
+.team-items {
+  display: flex;
+  text-align: center;
+}
+
+.team-foto,
+.team-position {
+  margin-bottom: 32px;
+}
+
 .team {
   background: var(--bcgnd-fltr-clr);
 }
 
 .team-list {
   background: var(--font-hero-clr);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list:not(:last-child) {
+  margin-right: 24px;
 }
 
 .team-name {
+  margin-bottom: 8px;
+
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
@@ -240,15 +272,27 @@ body {
 
 /*======/OUR TEAM/=============*/
 /*======FOOTER=============*/
+
+.container-footer {
+  width: 1128px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 footer {
   background: var(--primary-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logo-footer {
   color: var(--bcgnd-fltr-clr);
+  margin-bottom: 16px;
 }
 
 .text-footer {
+  width: 264px;
+
   color: var(--text-footer-clr);
 }
 /*======/FOOTER/=============*/
