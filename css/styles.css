@@ -61,7 +61,7 @@ body {
   font-size: 18px;
   line-height: 1.33;
   display: flex;
-  align-items: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -87,25 +87,30 @@ body {
 
 .container {
   display: flex;
-  width: 1128px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /*===========/COMPONENTS/===========*/
 
 /*===========HEADER===========*/
 .header {
   border-bottom: 1px solid var(--text-footer-clr);
-  height: 72px;
 }
+
 .main-page {
   align-items: center;
-  height: 100%;
 }
 
 .page-header {
@@ -115,6 +120,10 @@ body {
 
 .page-header > .link {
   margin-right: 76px;
+}
+
+.logo-header {
+  align-self: center;
 }
 
 .menu-item:not(:last-child),
@@ -129,6 +138,11 @@ body {
   font-weight: 500;
 
   cursor: pointer;
+}
+
+.menu-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-studio:hover,
@@ -227,8 +241,6 @@ body {
 }
 
 .picture {
-  display: block;
-
   border: 1px solid var(--text-footer-clr);
 }
 
@@ -297,14 +309,16 @@ footer {
 }
 /*======/FOOTER/=============*/
 /*======PORTOFOLIO=============*/
-.card-items {
-  display: flex;
-  flex-wrap: wrap;
+.page-ptf {
+  padding-top: 96px;
+}
+
+.filter-menu-set {
+  justify-content: center;
 }
 
 .filter-menu {
   display: flex;
-  justify-content: center;
   margin-bottom: 72px;
 }
 
@@ -327,7 +341,8 @@ footer {
 
   cursor: pointer;
 }
-.filter-menu:not(:last-child) {
+
+.filter-button:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -335,6 +350,21 @@ footer {
 .filter-btn:focus {
   color: var(--font-hero-clr);
   background: var(--hover-color);
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -24px;
+  margin-bottom: -48px;
+}
+
+.foto-card {
+  border-bottom: 1px solid var(--text-footer-clr);
+  margin-right: 24px;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  flex-basis: calc(100% / 3 - 48px);
 }
 
 .foto-ptf {
@@ -351,18 +381,9 @@ footer {
 
   color: var(--primary-text-color);
 }
+
 .name-fltr-ptf {
   padding-left: 16px;
 }
 
-.foto-card {
-  border: 1px solid var(--text-footer-clr);
-  margin-right: 24px;
-  margin-bottom: 48px;
-  padding-bottom: 32px;
-  /*row-gap: 24px;
-  column-gap: 48px;*/
-  flex-basis: calc((100% - 48px) / 3);
-  background-color: green;
-}
 /*======/PORTOFOLIO/=============*/
