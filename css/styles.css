@@ -56,8 +56,6 @@ body {
 }
 
 .logotype {
-  /*display: flex;*/
-
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -120,8 +118,11 @@ img {
 }
 
 .logo-header,
-.menu-item,
-.menu-adress-item {
+.menu-studio,
+.menu-prt,
+.menu-cnts,
+.menu-email,
+.menu-tel {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -174,16 +175,17 @@ img {
 /*============HERO===============*/
 .main-title {
   margin-bottom: 48px;
+  max-width: 494px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
 
   color: var(--font-hero-clr);
 }
 
 .service-btn {
-  display: inline-block;
   padding: 16px 32px;
 
   font-family: inherit;
@@ -206,17 +208,25 @@ img {
 
 .hero {
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+
   background: var(--primary-text-color);
 }
 /*============/HERO/===============*/
 
 /*========OUR FEATURES=============*/
+.section-features {
+  padding-bottom: 0;
+}
 
 .features-set {
   display: flex;
 }
 
 .features-name {
+  margin-bottom: 8px;
+
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
@@ -230,6 +240,11 @@ img {
 /*======/OUR FEATURES/=============*/
 
 /*======WHAT ARE WE DOING=============*/
+.container-wawd {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .foto-set {
   display: flex;
 }
@@ -242,6 +257,10 @@ img {
   margin-right: 24px;
 }
 /*======OUR TEAM=============*/
+.container-team {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .team-set {
   display: flex;
