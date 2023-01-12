@@ -56,11 +56,12 @@ body {
 }
 
 .logotype {
+  /*display: flex;*/
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
 
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -109,21 +110,20 @@ img {
   border-bottom: 1px solid var(--text-footer-clr);
 }
 
-.main-page {
-  align-items: center;
-}
-
 .page-header {
   display: flex;
   margin-right: auto;
 }
 
-.page-header > .link {
+.logo-header {
   margin-right: 76px;
 }
 
-.logo-header {
-  align-self: center;
+.logo-header,
+.menu-item,
+.menu-adress-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-item:not(:last-child),
@@ -132,17 +132,11 @@ img {
 }
 .menu-nav {
   display: flex;
-  align-items: center;
 
   font-style: normal;
   font-weight: 500;
 
   cursor: pointer;
-}
-
-.menu-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .menu-studio:hover,
@@ -218,7 +212,7 @@ img {
 
 /*========OUR FEATURES=============*/
 
-.features-items {
+.features-set {
   display: flex;
 }
 
@@ -236,7 +230,7 @@ img {
 /*======/OUR FEATURES/=============*/
 
 /*======WHAT ARE WE DOING=============*/
-.foto-items {
+.foto-set {
   display: flex;
 }
 
@@ -249,14 +243,13 @@ img {
 }
 /*======OUR TEAM=============*/
 
-.team-items {
+.team-set {
   display: flex;
-  text-align: center;
 }
-
-.team-foto,
-.team-position {
-  margin-bottom: 32px;
+.team-text {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team {
@@ -286,20 +279,19 @@ img {
 /*======FOOTER=============*/
 
 .container-footer {
-  width: 1128px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1158px;
+  padding: 100px 15px;
+  margin: 0 auto;
 }
 
 footer {
   background: var(--primary-text-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .logo-footer {
-  color: var(--bcgnd-fltr-clr);
   margin-bottom: 16px;
+
+  color: var(--bcgnd-fltr-clr);
 }
 
 .text-footer {
@@ -309,10 +301,11 @@ footer {
 }
 /*======/FOOTER/=============*/
 /*======PORTOFOLIO=============*/
+
 .page-ptf {
   padding-top: 96px;
 }
-
+/*------MENU-FILTR-----------*/
 .filter-menu-set {
   justify-content: center;
 }
@@ -324,7 +317,6 @@ footer {
 
 .filter-btn {
   display: block;
-  /*margin-right: 24px;*/
   padding: 12px 24px;
 
   font-family: inherit;
@@ -351,7 +343,8 @@ footer {
   color: var(--font-hero-clr);
   background: var(--hover-color);
 }
-
+/*------/MENU-FILTR/-----------*/
+/*------CARD-SET-----------*/
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -363,17 +356,11 @@ footer {
   border-bottom: 1px solid var(--text-footer-clr);
   margin-right: 24px;
   margin-bottom: 48px;
-  padding-bottom: 32px;
   flex-basis: calc(100% / 3 - 48px);
-}
-
-.foto-ptf {
-  margin-bottom: 32px;
 }
 
 .title-ptf {
   margin-bottom: 8px;
-  padding-left: 16px;
 
   font-size: 20px;
   line-height: 1.2;
@@ -382,8 +369,9 @@ footer {
   color: var(--primary-text-color);
 }
 
-.name-fltr-ptf {
-  padding-left: 16px;
+.card-text {
+  padding: 32px 16px;
 }
 
+/*------/CARD-SET/-----------*/
 /*======/PORTOFOLIO/=============*/
