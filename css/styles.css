@@ -85,7 +85,6 @@ body {
 }
 
 .container {
-  display: flex;
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -107,7 +106,9 @@ img {
 .header {
   border-bottom: 1px solid var(--text-footer-clr);
 }
-
+.main-page {
+  display: flex;
+}
 .page-header {
   display: flex;
   margin-right: auto;
@@ -133,6 +134,7 @@ img {
 }
 .menu-nav {
   display: flex;
+  align-items: center;
 
   font-style: normal;
   font-weight: 500;
@@ -158,9 +160,13 @@ img {
 .menu-cnts {
   color: var(--primary-text-color);
 }
+.menu-adress-set {
+  display: flex;
+}
 
 .menu-adress {
   display: flex;
+  align-items: center;
 
   font-style: normal;
 }
@@ -308,14 +314,12 @@ footer {
 }
 
 .logo-footer {
-  margin-bottom: 16px;
-
   color: var(--bcgnd-fltr-clr);
 }
 
 .text-footer {
   width: 264px;
-
+  margin-top: 16px;
   color: var(--text-footer-clr);
 }
 /*======/FOOTER/=============*/
@@ -324,19 +328,26 @@ footer {
 .page-ptf {
   padding-top: 96px;
 }
-/*------MENU-FILTR-----------*/
-.filter-menu-set {
-  justify-content: center;
-}
 
+/*------MENU-FILTR-----------*/
 .filter-menu {
   display: flex;
   margin-bottom: 72px;
+  justify-content: center;
+}
+
+.filter-button:not(:last-child) {
+  margin-right: 24px;
 }
 
 .filter-btn {
-  display: block;
-  padding: 12px 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  border: none;
+  border-radius: 4px;
 
   font-family: inherit;
   font-weight: 500;
@@ -344,17 +355,10 @@ footer {
   line-height: inherit;
   letter-spacing: 0.04em;
 
-  border: none;
-  border-radius: 4px;
-
   color: var(--button-color);
   background: var(--bcgnd-fltr-clr);
 
   cursor: pointer;
-}
-
-.filter-button:not(:last-child) {
-  margin-right: 24px;
 }
 
 .filter-btn:hover,
@@ -367,17 +371,22 @@ footer {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -24px;
-  margin-bottom: -48px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .foto-card {
-  border-bottom: 1px solid var(--text-footer-clr);
-  margin-right: 24px;
-  margin-bottom: 48px;
-  flex-basis: calc(100% / 3 - 48px);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
+.card-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-left: 1px solid var(--text-footer-clr);
+  border-bottom: 1px solid var(--text-footer-clr);
+  border-right: 1px solid var(--text-footer-clr);
+}
 .title-ptf {
   margin-bottom: 8px;
 
@@ -386,10 +395,6 @@ footer {
   font-weight: 500;
 
   color: var(--primary-text-color);
-}
-
-.card-text {
-  padding: 32px 16px;
 }
 
 /*------/CARD-SET/-----------*/
