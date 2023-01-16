@@ -124,6 +124,7 @@ img {
 .menu-cnts,
 .menu-email,
 .menu-tel {
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -230,6 +231,10 @@ img {
   display: flex;
 }
 
+.features-list {
+  flex-basis: calc((100% - 72px) / 4);
+}
+
 .features-name {
   margin-bottom: 8px;
 
@@ -305,21 +310,27 @@ img {
 
 .container-footer {
   max-width: 1158px;
-  padding: 100px 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
 footer {
   background: var(--primary-text-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logo-footer {
+  display: block;
+  margin-bottom: 16px;
+
   color: var(--bcgnd-fltr-clr);
 }
 
 .text-footer {
   width: 264px;
-  margin-top: 16px;
+
   color: var(--text-footer-clr);
 }
 /*======/FOOTER/=============*/
